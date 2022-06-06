@@ -30,3 +30,5 @@ is not quite like striping
 - https://arstechnica.com/gadgets/2021/06/raidz-expansion-code-lands-in-openzfs-master
 - https://docs.freebsd.org/en/books/handbook/zfs/
 - http://breden.org.uk/2008/03/02/a-home-fileserver-using-zfs/
+- https://www.golinuxcloud.com/install-plex-media-server-debian-11/
+- https://stackoverflow.com/questions/68992799/warning-apt-key-is-deprecated-manage-keyring-files-in-trusted-gpg-d-instead
