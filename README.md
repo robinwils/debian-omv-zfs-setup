@@ -19,6 +19,22 @@ is not quite like striping
 - No parity, apprently makes some stuff faster (TODO:describe when more is known)
 - Less storage efficiency (1/n resulting storage with n being the number of disks in the vdev)
 
+## Probable setup
+- Debian stable with zfsutils
+- ZFS Pool with 2 disks (WD Red Pro of 4/6TB) mirror vdevs, 2 vdevs in total (4 disks => 8TB of storage with 4TB disks)
+  - 1 dataset per user
+  - 1 dataset for jellyfin ?
+- openmediavault as a "pure" service (no docker)
+- jellyfin as a "pure" service (no docker)
+- nextcloud integration ?
+- encryption ? see Encryption section for more
+
+## Encryption
+ZFS native encryption will be slow on i7 920 because of missing encryption acceleration.
+We would need to use LUKS with dm-crypt:
+- First https://wiki.archlinux.org/title/dm-crypt/Encrypting_an_entire_system#LUKS_on_a_partition
+- Then https://wiki.archlinux.org/title/ZFS#Encryption_in_ZFS_using_dm-crypt
+
 # Links
 
 - https://arstechnica.com/information-technology/2020/05/zfs-101-understanding-zfs-storage-and-performance/
