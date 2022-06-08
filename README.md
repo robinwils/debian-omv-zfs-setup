@@ -28,12 +28,16 @@ is not quite like striping
 - jellyfin as a "pure" service (no docker)
 - nextcloud integration ?
 - encryption ? see Encryption section for more
+- backup TBD
 
 ## Encryption
 ZFS native encryption will be slow on i7 920 because of missing encryption acceleration.
 We would need to use LUKS with dm-crypt:
 - First https://wiki.archlinux.org/title/dm-crypt/Encrypting_an_entire_system#LUKS_on_a_partition
 - Then https://wiki.archlinux.org/title/ZFS#Encryption_in_ZFS_using_dm-crypt
+
+## Backup
+TODO
 
 # Links
 
